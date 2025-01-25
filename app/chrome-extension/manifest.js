@@ -5,13 +5,6 @@ const packageJson = JSON.parse(fs.readFileSync('../package.json', 'utf8'));
 
 const isFirefox = process.env.__FIREFOX__ === 'true';
 
-const sidePanelConfig = {
-  side_panel: {
-    default_path: 'side-panel/index.html',
-  },
-  permissions: ['sidePanel'],
-};
-
 /**
  * After changing, please reload the extension at `chrome://extensions`
  * @type {chrome.runtime.ManifestV3}
@@ -28,7 +21,7 @@ const manifest = deepmerge(
     version: packageJson.version,
     description: '__MSG_extensionDescription__',
     host_permissions: ['<all_urls>'],
-    permissions: ['sidePanel', 'storage', 'scripting', 'tabs', 'notifications'],
+    permissions: ['storage', 'scripting', 'tabs', 'notifications'],
     options_page: 'options/index.html',
     background: {
       service_worker: 'background.iife.js',
@@ -66,7 +59,7 @@ const manifest = deepmerge(
       },
     ],
   },
-  !isFirefox && sidePanelConfig,
+  !isFirefox,
 );
 
 export default manifest;
