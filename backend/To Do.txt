@@ -4,4 +4,10 @@
 
 Presentation Ideas:
 - Make sure to hit the accessibility implications of our application
-- Throw out buzzwords and make sure to let them know 
+- Throw out buzzwords and make sure to let them know what we used (flask, cohere, genAI, terraform, docker, Jenkins)
+- Get to know judges and their backgrounds
+- Explain the app as a person; personify this app and describe it as a person
+    - Thought of a parent standing over your shoulder while you study as a good joke
+    - "That sounds amazing"
+    - "I know that if my mom was watching over my shoulder while I was studying, I wouldn't be spending an hour and a half on instagram reels or on YouTube watching NBA highlights"
+- 
