@@ -1,2 +1,7 @@
 1. System prompt for 'WHAT'
 2. Code python script to clean website text, and then evaluate alignment with focus topic, using system prompt created in step 1
+
+
+Presentation Ideas:
+- Make sure to hit the accessibility implications of our application
+- Throw out buzzwords and make sure to let them know 
