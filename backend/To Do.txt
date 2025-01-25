@@ -1,2 +1,2 @@
-1. System prompt for 'WHAT'.
+1. System prompt for 'WHAT'
 2. Code python script to clean website text, and then evaluate alignment with focus topic, using system prompt created in step 1
