@@ -1,0 +1,130 @@
+Welcome to PhilPapers
+PhilPapers is a comprehensive index and bibliography of philosophy maintained by the community of philosophers. We monitor all sources of research content in philosophy, including journals, books, and open access archives. We also host the largest open access archive in philosophy. Our index currently contains 2,670,646 entries categorized in 5,981 categories. PhilPapers has over 430,000 registered users.
+Browse by topic
+Metaphysics and Epistemology (443,486)
+Epistemology (53,759)
+Metaphilosophy (11,739)
+Metaphysics (58,638)
+Philosophy of Action (32,294)
+Philosophy of Language (61,249)
+Philosophy of Mind (114,193)
+Philosophy of Religion (101,459)
+M&E, Misc (349)
+Value Theory (682,046)
+Aesthetics (79,621)
+Applied Ethics (185,545)
+Meta-Ethics (18,759)
+Normative Ethics (48,764)
+Philosophy of Gender, Race, and Sexuality (39,791)
+Philosophy of Law (29,912)
+Social and Political Philosophy (178,612)
+Value Theory, Miscellaneous (69,761)
+Science, Logic, and Mathematics (492,464)
+Logic and Philosophy of Logic (76,415)
+Philosophy of Biology (43,200)
+Philosophy of Cognitive Science (118,808)
+Philosophy of Computing and Information (9,365)
+Philosophy of Mathematics (26,997)
+Philosophy of Physical Science (41,125)
+Philosophy of Social Science (69,947)
+Philosophy of Probability (9,959)
+General Philosophy of Science (55,299)
+Philosophy of Science, Misc (13,565)
+History of Western Philosophy (383,376)
+Ancient Greek and Roman Philosophy (95,607)
+Medieval and Renaissance Philosophy (38,758)
+17th/18th Century Philosophy (111,104)
+19th Century Philosophy (57,976)
+20th Century Philosophy (60,089)
+History of Western Philosophy, Misc (1,370)
+Philosophical Traditions (301,563)
+African/Africana Philosophy (5,499)
+Asian Philosophy (53,586)
+Continental Philosophy (144,996)
+European Philosophy (77,595)
+Philosophy of the Americas (11,732)
+Philosophical Traditions, Miscellaneous (6,172)
+Philosophy, Misc (16,804)
+Philosophy, Introductions and Anthologies (513)
+Philosophy, General Works (7,849)
+Teaching Philosophy (1,880)
+Philosophy, Miscellaneous (2,284)
+Other Academic Areas (114,462)
+Natural Sciences (8,749)
+Social Sciences (19,982)
+Cognitive Sciences (33,124)
+Formal Sciences (1,843)
+Arts and Humanities (40,851)
+Professional Areas (5,822)
+Other Academic Areas, Misc (1,089)
+Latest news
+Beat AI: A contest using philosophical concepts
+posted 2024-06-03 by David Bourget
+Check out Beat AI, a PhilPapers-designed game in which you trick AI systems using your philosophical knowledge. In the process you help us collect data to train better AI models.
+
+Noble's Logic bibliography now part of PhilPapers
+posted 2022-09-08 by David Bourget
+We're excited to announce that Bobby Noble's comprehensive bibliography of books on logic has now been integrated with PhilPapers. Many thanks to Bobby for this contribution! 
+
+Results of 2020 PhilPapers Survey
+posted 2021-11-01 by David Bourget
+We've now released the results of the 2020 PhilPapers Survey, which surveyed 1785 professional philosophers on their views on 100 philosophical issues.  Results are available on the 2020 PhilPapers Survey website and in draft article form in "Philosophers on Philosophy: The 2020 PhilPapers Survey". Discussion is welcome in the PhilPapers Survey 2020 discussion group.
+
+
+Editorial team
+General Editors:
+David Bourget (Western Ontario)
+David Chalmers (ANU, NYU)
+
+Area Editors:
+David Bourget
+Gwen Bradford
+Berit Brogaard
+Margaret Cameron
+David Chalmers
+James Chase
+Rafael De Clercq
+Ezio Di Nucci
+Esa Diaz-Leon
+Barry Hallen
+Hans Halvorson
+Jonathan Ichikawa
+Michelle Kosch
+Øystein Linnebo
+Paul Livingston
+Brandon Look
+Manolo Martínez
+Matthew McGrath
+Michiru Nagatsu
+Susana Nuccetelli
+Giuseppe Primiero
+Jack Alan Reynolds
+Darrell P. Rowbottom
+Aleksandra Samonek
+Constantine Sandis
+Howard Sankey
+Jonathan Schaffer
+Thomas Senor
+Daniel Star
+Jussi Suikkanen
+Aness Kim Webster
+
+Other editors
+Contact us
+Learn more about PhilPapers
+
+About us
+Centre for Digital Philosophy
+UWO
+Phiosophy Documentation Center
+Institute of Philosophy, London
+Applied ethics	Epistemology	History of Western Philosophy	Meta-ethics	Metaphysics	Normative ethics
+Philosophy of biology	Philosophy of language	Philosophy of mind	Philosophy of religion	Science Logic and Mathematics	More ...
+Home | New books and articles | Bibliographies | Philosophy journals | About PhilPapers | API | Contact us | Code of conduct
+
+CDP Phiosophy Documentation Center
+PhilPapers logo by Andrea Andrews and Meghan Driscoll.
+This site uses cookies and Google Analytics (see our terms & conditions for details regarding the privacy implications).
+
+Use of this site is subject to terms & conditions.
+All rights reserved by The PhilPapers Foundation
