@@ -3,7 +3,7 @@
 import '@src/Popup.css';
 import { useStorage, withErrorBoundary, withSuspense } from '@extension/shared';
 import { exampleThemeStorage } from '@extension/storage';
-import { useState, type ComponentPropsWithoutRef } from 'react';
+import { useEffect, useRef, useState, type ComponentPropsWithoutRef } from 'react';
 import PopupModal from './PopupModal';
 
 
@@ -18,16 +18,37 @@ const Popup = () => {
   const [popupContent, setPopupContent] = useState('');
 
   // Function to handle showing the popup
+  const popupShownRef = useRef(false);
+
+  // Function to handle showing the popup
   const showPopup = (content: string) => {
+    if (popupShownRef.current) return; // Prevent multiple renders
     setPopupContent(content);
     setIsPopupVisible(true);
+    document.documentElement.classList.add('blurred'); // Apply blur to the entire page
+    popupShownRef.current = true; // Mark the popup as shown
   };
 
   // Function to handle hiding the popup
   const hidePopup = () => {
     setIsPopupVisible(false);
+    document.documentElement.classList.remove('blurred');
+    popupShownRef.current = false;// Remove blur when popup is dismissed
   };
 
+  // useEffect(() => {
+  //   chrome.runtime.onMessage.addListener((message) => {
+  //     if (message.type === 'SHOW_POPUP') {
+  //       showPopup(message.content);
+  //     }
+  //   });
+
+  //   return () => {
+  //     chrome.runtime.onMessage.removeListener(() => {});
+  //   };
+  // }, []);
+
+  showPopup('test');
 
   return (
     <div
@@ -85,8 +106,8 @@ const Popup = () => {
           </div>
         </div>
       </main>
-       {/* Popup Modal */}
-       {isPopupVisible && (
+      {/* Popup Modal */}
+      {isPopupVisible && (
         <PopupModal
           content={popupContent}
           onClose={hidePopup}

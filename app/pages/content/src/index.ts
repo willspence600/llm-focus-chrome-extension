@@ -18,6 +18,10 @@ function parse(document: Document): string {
   return article?.textContent?.trim() || '';
 }
 
+
+
 const res = parse(window.document);
 console.log("3) Content script is sending the text. First 25 chars: ", res.slice(0,25))
 chrome.runtime.sendMessage({ pageContent: res });
+
+
