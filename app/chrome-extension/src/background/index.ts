@@ -10,19 +10,13 @@ import { GlobalArrayEntry } from '../../../globalStatus';
 // chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(error => console.error(error));
 
 chrome.tabs.onActivated.addListener(activeInfo => {
-  if (getBreakState()) {
-    console.log('1) Break is active');
-    return;
-  }
+  
   console.log('1b) Switched to different tab');
   showSummary(activeInfo.tabId);
 });
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
-  if (getBreakState()) {
-    console.log('1) Break is active');
-    return;
-  }
+  
   if (changeInfo.status === 'complete') {
     console.log('1a) Current tab updated');
     showSummary(tabId);
@@ -31,10 +25,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
 
 // Listen for messages from the content script
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (getBreakState()) {
-    console.log('1) Break is active');
-    return;
-  }
+ 
   if (message.pageContent) {  
     console.log('4) Service worker received page content:', message.pageContent.slice(0, 25));
     sendPageContentToBackend(message.pageContent);
@@ -42,10 +33,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
 });
 function sendPageContentToBackend(content: string) {
-  if (getBreakState()) {
-    console.log('1) Break is active');
-    return;
-  }
+ 
   fetch('http://127.0.0.1:5000/post_content', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -53,22 +41,22 @@ function sendPageContentToBackend(content: string) {
   })
     .then(response => response.json())
     .then(data => {
-      console.log('Received from backend:', data.receivedContent);
+      console.log('Received from backend:', data.aiResponse);
       //check here first if data.receivedContent is contains true
-      chrome.runtime.sendMessage({
-        type: 'SHOW_POPUP',
-        content: data.receivedContent,
-      });
+      if (!data.aiResponse.includes("true")){
+        console.log("BLOCKED")
+        chrome.runtime.sendMessage({
+          type: 'SHOW_POPUP',
+          content: data.receivedContent,
+        });
+      }
     })
     .catch(error => console.error('Error:', error));
 }
 
 
 async function showSummary(tabId: number) {
-  if (getBreakState()) {
-    console.log('1) Break is active');
-    return;
-  }
+ 
   const tab = await chrome.tabs.get(tabId);
 
   addToGlobalArray({ url: tab.url?.toString() || '', flag: false })
