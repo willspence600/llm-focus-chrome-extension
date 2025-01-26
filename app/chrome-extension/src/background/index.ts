@@ -12,7 +12,7 @@ import { get } from 'http';
 // chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(error => console.error(error));
 let tabId = 0;
 
-function getTabId() {
+export function getTabId() {
   return tabId;
 }
 
@@ -33,6 +33,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
   if (changeInfo.status === 'complete') {
     console.log('1a) Current tab updated');
     showSummary(tabId);
+    setTabId(tabId);
   }
 });
 
@@ -62,6 +63,22 @@ async function sendPageContentToBackend(content: string) {
           await chrome.scripting.executeScript({
             target: { tabId: getTabId() },
             files: ['content-runtime/index.iife.js'],
+          });
+
+          chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+            if (message.action === 'dismissed') {
+              console.log('Dismiss action received for tab:', message.tabId);
+          
+              // Update the global array
+             
+                updateGlobalArrayEntry(tab.url?.toString() || '', { flag: true });
+              
+          
+              console.log('Global array after update:', getGlobalArray());
+          
+              // Send acknowledgment
+              sendResponse({ status: 'success', message: 'Dismiss action processed.' });
+            }
           });
         }
       }

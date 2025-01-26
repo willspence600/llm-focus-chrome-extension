@@ -16,9 +16,9 @@ const manifest = deepmerge(
      * if you want to support multiple languages, you can use the following reference
      * https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization
      */
-    name: '__MSG_extensionName__',
+    name: 'RECLaiM',
     version: packageJson.version,
-    description: '__MSG_extensionDescription__',
+    description: 'AI Powered Study Tool',
     host_permissions: ['<all_urls>'],
     permissions: ['storage', 'scripting', 'tabs', 'notifications', 'activeTab'],
     options_page: 'options/index.html',
@@ -26,6 +26,7 @@ const manifest = deepmerge(
       service_worker: 'background.iife.js',
       type: 'module',
     },
+  
     action: {
       default_popup: 'popup/index.html',
       default_icon: 'icon-34.png',
