@@ -1,72 +1,81 @@
+
+
 import '@src/Popup.css';
 import { useStorage, withErrorBoundary, withSuspense } from '@extension/shared';
 import { exampleThemeStorage } from '@extension/storage';
 import type { ComponentPropsWithoutRef } from 'react';
 
-const notificationOptions = {
-  type: 'basic',
-  iconUrl: chrome.runtime.getURL('icon-34.png'),
-  title: 'Injecting content script error',
-  message: 'You cannot inject script here!',
-} as const;
 
 const Popup = () => {
   const theme = useStorage(exampleThemeStorage);
   const isLight = theme === 'light';
-  const logo = isLight ? 'popup/logo_vertical.svg' : 'popup/logo_vertical_dark.svg';
-  const goGithubSite = () =>
-    chrome.tabs.create({ url: 'https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite' });
+  console.log('Awaiting?');
 
-  const injectContentScript = async () => {
-    const [tab] = await chrome.tabs.query({ currentWindow: true, active: true });
 
-    if (tab.url!.startsWith('about:') || tab.url!.startsWith('chrome:')) {
-      chrome.notifications.create('inject-error', notificationOptions);
-    }
-    try {
-      console.log('injecting1');
-      await chrome.scripting
-        .executeScript({
-          target: { tabId: tab.id! },
-          func: () => {
-            console.log('test');
-          },
-          // files: ['/content-runtime/index.iife.js'],
-        })
-        .then(res => console.log(res));
-      console.log('injecting2');
-    } catch (err) {
-      // Handling errors related to other paths
-      console.error(err);
-      if (err instanceof Error && err.message.includes('Cannot access a chrome:// URL')) {
-        chrome.notifications.create('inject-error', notificationOptions);
-      }
-    }
-    console.log('Awaiting?');
-  };
 
   return (
-    <div className={`App ${isLight ? 'bg-slate-50' : 'bg-gray-800'}`}>
-      <header className={`App-header ${isLight ? 'text-gray-900' : 'text-gray-100'}`}>
-        <button onClick={goGithubSite}>
-          <img src={chrome.runtime.getURL(logo)} className="App-logo" alt="logo" />
-        </button>
-        <p>
-          Edit <code>pages/popup/src/Popup.tsx</code>
-        </p>
+<div
+  className={`App ${
+    isLight ? 'bg-gradient-to-br from-blue-100 to-blue-300' : 'bg-gradient-to-br from-gray-800 to-gray-900'
+  } min-h-screen flex flex-col items-center`}
+>
+  {/* Header Bar */}
+  <header
+    className={`w-full py-6 px-6 ${
+      isLight ? 'bg-blue-700 text-white' : 'bg-gray-700 text-gray-100'
+    } shadow-lg flex justify-center items-center rounded-b-2xl`}
+  >
+        <img
+          src="./popup/public/QHacks-Logo.png"
+          alt="Header Logo"
+          className="h-auto w-auto"
+        />
+  </header>
+
+  {/* Main Content */}
+  <main className="flex-1 flex items-center justify-center w-full">
+    <div className="w-full max-w-sm p-8 bg-white rounded-2xl shadow-xl">
+      <label
+        className="block text-blue-700 text-lg font-bold mb-4 text-center"
+        htmlFor="unique-input"
+      >
+        Enter Prompt
+      </label>
+      <textarea
+        className="text-base w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm bg-gray-100 h-36 resize-none focus:outline-none focus:ring-4 focus:ring-blue-300 focus:border-transparent"
+        placeholder="Type your prompt here..."
+        id="unique-input"
+      />
+      <div className="flex justify-center mt-6">
         <button
-          className={
-            'font-bold mt-4 py-1 px-4 rounded shadow hover:scale-105 ' +
-            (isLight ? 'bg-blue-200 text-black' : 'bg-gray-700 text-white')
-          }
-          onClick={injectContentScript}>
-          Click to inject Content Script hi
+          id="enterButton"
+          className="cursor-pointer group relative flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full hover:scale-105 transition-transform duration-300 font-bold text-base shadow-lg"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            height="20px"
+            width="20px"
+          >
+            <path
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-width="2"
+              stroke="#ffffff"
+              d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+            ></path>
+          </svg>
+          Enter Prompt
         </button>
-        <ToggleButton>Toggle theme</ToggleButton>
-      </header>
+      </div>
     </div>
+  </main>
+</div>
   );
 };
+
+
 
 const ToggleButton = (props: ComponentPropsWithoutRef<'button'>) => {
   const theme = useStorage(exampleThemeStorage);
