@@ -29,10 +29,10 @@ const manifest = deepmerge(
   
     action: {
       default_popup: 'popup/index.html',
-      default_icon: 'icon-34.png',
+      default_icon: 'QHacks-Logo (1).png',
     },
     icons: {
-      128: 'icon-128.png',
+      128: 'QHacks-Logo (1).png',
     },
     // content_scripts: [
     //   {
