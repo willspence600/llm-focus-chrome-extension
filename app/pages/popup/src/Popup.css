@@ -29,3 +29,47 @@ code {
   padding: 0.2rem 0.5rem;
 }
 
+body.blurred {
+  filter: blur(5px);
+  pointer-events: none; /* Optional: prevent interactions with blurred content */
+}
+
+.popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.popup-content input {
+  margin-top: 10px;
+  padding: 5px;
+  width: 80%;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
