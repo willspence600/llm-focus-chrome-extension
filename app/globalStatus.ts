@@ -28,6 +28,9 @@ export function getGlobalArray(): GlobalArrayEntry[] {
     return [...globalArray]; // Return a copy to prevent direct modification
 }
 
+export function getFlagValue(url: string): boolean{
+    return globalArray.find(item => item.url === url)?.flag || false;
+}
 export function updateGlobalArrayEntry(url: string, updatedEntry: Partial<GlobalArrayEntry>) {
     globalArray = globalArray.map(item =>
         item.url === url ? { ...item, ...updatedEntry } : item

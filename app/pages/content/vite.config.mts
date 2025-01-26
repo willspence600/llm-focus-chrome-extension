@@ -20,6 +20,8 @@ export default withPageConfig({
       name: 'ContentScript',
       fileName: 'index',
     },
+    
+    
     outDir: resolve(rootDir, '..', '..', 'dist', 'content'),
   },
 });
