@@ -8,6 +8,10 @@ We are proud to announce that RECLaiM made it to the final judging round at QHAC
 
 Additionally, we received the award for "Best Use of Terraform" for our innovative approach and effective implementation. Each member of the RECLaiM team had the privilege of taking home **Keychron K8 Wireless Keyboards**! Big thanks to Major League Hacking for sponsoring our prizes!
 
+### [Click here to check out our QHACKS 2025 submission!](https://devpost.com/software/reclaim-uljm2r)
+
+
+
 ## Inspiration
 
 As individuals with ADHD, we’ve often struggled to stay focused while studying online. Existing tools like website blockers felt overly restrictive, often blocking entire sites we needed access to, leading to frustration and frequent disabling of the tools. This inspired us to create a smarter solution: RECLaiM, an adaptive Chrome extension that uses AI to dynamically evaluate website relevance based on the user's focus, providing a tailored approach to staying on track.
