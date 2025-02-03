@@ -1,0 +1,134 @@
+
+Operating Lease Accounting under ASC 842 Explained with a Full Example
+by Abdi Ali, Senior Technical Accounting Consultant | Jan 21, 2025
+
+1. Operating lease treatment under ASC 842
+
+2. Operating lease vs. finance lease identification under ASC 842
+
+Transference of title/ownership to the lessee
+Purchase option
+Lease term for major part of the remaining economic life of the asset
+Present value represents “substantially all” of the fair value of the asset
+Asset specialization
+3. Is capitalization required for all operating leases under 842?
+
+4. Operating lease accounting example
+
+Details on the example lease agreement
+Steps to account for the above lease under ASC 842
+5. Ultimate Lease Accounting Guide
+
+6. Related articles
+
+Operating lease treatment under ASC 842
+ASC 842 requires leases to be presented on both the balance sheet and income statement, regardless of whether they are classified as operating or finance leases. For operating leases in particular, this means recognizing a right-of-use (ROU) asset and a corresponding lease liability at lease commencement. This approach increases transparency by providing a clearer picture of a company’s total lease commitments.
+
+Even though both finance leases and operating leases are capitalized, the financial statement presentation distinguishes between operating ROU assets and lease liabilities from finance ROU assets and lease liabilities, both on the face of the financials and in the accompanying notes.
+
+One area that remains unchanged under ASC 842 is the effect of operating leases on the income statement. Companies continue to recognize a straight-line expense for lease payments over the lease term, reported as an operating expense on the statement of profit and loss.
+
+Operating lease vs. finance lease identification under ASC 842
+Lease classification under ASC 842 follows a principles-based approach, removing the rigid “bright lines” previously used. For a lease to be classified as a finance lease, it must meet one of the five criteria listed below. Leases that do not meet any of these criteria are classified as operating leases:
+
+1. Transference of title/ownership to the lessee
+Ownership of the underlying asset is transferred to the lessee by the end of the lease term.
+
+2. Purchase option
+The lease arrangement grants the lessee a lease purchase option that is reasonably certain to be exercised. It is important to note the purchase option must be reasonably certain to be exercised for this criteria to be met.
+
+3. Lease term for major part of the remaining economic life of the asset
+The lease term spans a major part of the remaining economic life of the underlying asset.
+
+Note: The FASB provided additional clarification that the “major part” can be consistent with the 75% threshold used previously under ASC 840, and companies are allowed to determine how they will define the “major part” threshold.
+
+4. Present value represents “substantially all” of the fair value of the asset
+The present value of the sum of the remaining lease payments equals or exceeds substantially all of the underlying asset’s fair value. If applicable, any residual value guarantee by the lessee not already included in lease payments is also included in the present value calculation.
+
+Note: The FASB provided some additional clarification that “substantially all” can be consistent with the 90% threshold used previously under ASC 840, and companies are allowed to determine their own “substantially all” threshold.
+
+5. Asset specialization
+The underlying asset is of such a specialized nature that it is expected to have no alternative use to the lessor at the end of the lease term.
+
+Is capitalization required for all operating leases under 842?
+An entity can establish an accounting policy to exclude operating leases with a lease term of 12 months or less at lease commencement (provided they do not also have a purchase option that is reasonably certain to be exercised) from capitalization on the balance sheet.
+
+Additionally, while ASC 842 does not have an exclusion for low-value assets, some companies have established a capitalization threshold. Similar to a capitalization threshold for fixed assets, the company has determined that leases below this value are not material to the company and therefore, are not recognized on the balance sheet.
+
+Operating lease accounting example
+The following is a full example of how to account for an operating lease under ASC 842.
+
+Details on the example lease agreement:
+First, assume a tenant signs a lease document with the following terms:
+
+Lease term
+The lease begins on April 1, 2024 (commencement date) and continues for 120 full calendar months. The tenant is granted access to the premises 60 days prior to the commencement date to install equipment and furnishings (the “early access period”). Such access is subject to all lease terms and conditions, except for rent commencement.
+
+Tenant improvement allowance
+The tenant received a tenant improvement allowance, or TIA, of $1.2 million from the landlord as an incentive to sign the lease. The landlord paid the contractor directly for the construction of the improvements, which were constructed prior to the early access period.
+
+Moving expenses
+The tenant also received a reimbursement of $30,000 for moving expenses from the landlord.
+
+Base rent
+Per the lease document, the first rent payment is due three full calendar months after the tenant begins operating at the leased location. Base rent is $205,000/month paid in arrears, with annual 3% increases on the anniversary of rent commencement.
+
+Assumptions to make
+The lease is classified as an operating lease and the fair value of the building is $300 million.
+The tenant opened for business at the location on June 1, 2024.
+The tenant is a private company with a calendar year-end and adopted ASC 842 on January 1, 2024.
+The discount rate implicit in the lease is unknown and the tenant’s incremental borrowing rate is 9%.
+Steps to account for the above lease under ASC 842
+Step 1: Determine the lease term
+The lease term stated in the contract is 120 months. The document also grants the tenant an early access period, subject to all the terms and conditions in the lease. Assuming the early access period started on February 1, 2024 – 60 days before the April 1 commencement date – the lease term is 122 months, from February 1, 2024, through March 31, 2034.
+
+Note: To understand the difference between the commencement date, execution date, possession dates, etc, read this article on when a lease starts.
+
+Step 2: Determine the total lease payments under US GAAP
+The tenant will begin paying rent on September 1, 2024 (three months from the date the tenant opened for business). The total lease payments made over the lease term are $26,863,751, as illustrated in the payment schedule below.
+
+Operating lease payment schedule
+
+Step 3: Calculate the right-of-use asset and lease liability
+Under ASC 842, the tenant calculates the ROU asset and lease liability based on the present value of remaining lease payments as of the possession date of the lease (February 1, 2024). The first 7 months of the lease term are considered rent-free periods since payments commence on September 1, 2024. Using the tenant’s incremental borrowing rate of 9% as of January 1, 2024, and LeaseQuery’s present value calculator tool, the present value of the remaining lease payments is $16,825,467.
+
+Present Value Calculator
+
+Note: The present value amount above is a simplified calculation based on Excel. Keep in mind that if you are using more accurate interest calculations, like those available in some lease accounting software solutions, you may see slightly different results. Remember this as you’re viewing demonstrations of lease accounting software from your choice of vendors.
+
+The tenant would then prepare an amortization schedule under ASC 842 to calculate periodic entries moving forward. Below is the amortization schedule for the lease in this example.
+
+Operating lease amortization schedule under ASC 842
+
+This concludes the example of how to account for an operating lease under ASC 842.
+
+Ultimate Lease Accounting Guide
+For more detailed examples of operating leases, finance leases, and more under ASC 842, download LeaseQuery’s Ultimate Lease Accounting Guide today.
+
+ASC 842 Lease Accounting Guide
+
+Related articles
+ASC 842: The New Lease Accounting Standards Explained with Examples, Effective Dates, & More
+ASC 842: The New Lease Accounting Standards Explained with Examples, Effective Dates, & More
+Capital/Finance Lease vs. Operating Lease Explained: Differences, Accounting, & More
+Capital/Finance Lease vs. Operating Lease Explained: Differences, Accounting, & More
+Tenant Improvement Allowance Accounting under ASC 842 Explained with a Full Example
+Tenant Improvement Allowance Accounting under ASC 842 Explained with a Full Example
+Right-of-Use Asset (ROU Asset) and Lease Liability for ASC 842, IFRS 16, and GASB 87 Explained with an Example
+Right-of-Use Asset (ROU Asset) and Lease Liability for ASC 842, IFRS 16, and GASB 87 Explained with an Example
+ASC 842 Lease Accounting Guide
+ASC 842 Lease Accounting Guide
+Abdi Ali
+About the author
+Abdi Ali, Senior Technical Accounting Consultant
+Abi-Khadar Ali is a Senior Technical Accounting Consultant at FinQuery and holds both Bachelor's and Master's degrees in Accounting from Georgia State University. With prior experience as an Accounting Associate, he brings a wealth of expertise to his current role. His commitment to excellence and strategic mindset drive efficiency and accuracy in financial reporting.
+FinQuery, Formerly LeaseQuery
+1-800-880-7270
+CONTACT US
+
+Platform
+Lease Accounting Software
+Prepaid and Accrual Accounting
+SBITA Accounting Software
+Contract Management Software
+Pricing

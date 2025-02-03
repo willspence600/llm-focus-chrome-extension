@@ -1,0 +1,71 @@
+1. System prompt for 'WHAT'
+2. Code python script to clean website text, and then evaluate alignment with focus topic, using system prompt created in step 1
+
+
+Presentation Ideas:
+- Make sure to hit the accessibility implications of our application
+- Throw out buzzwords and make sure to let them know what we used (flask, cohere, genAI, terraform, docker, Jenkins)
+- Get to know judges and their backgrounds
+- Explain the app as a person; personify this app and describe it as a person
+    - Thought of a parent standing over your shoulder while you study as a good joke
+    - "That sounds amazing"
+    - "I know that if my mom was watching over my shoulder while I was studying, I wouldn't be spending an hour and a half on instagram reels or on YouTube watching NBA highlights"
+- 
+
+Judges Profiling
+- Soheila Nadalian
+    - Data Scientist
+    - Works at GeoTab
+    - Data Analyst at Queen's University
+    - University of Waterloo Grad
+    - University of Tehran, Masters in AI
+        - Thesis was Improving Brain Tumour Segmentation in 4D MRI scans using deep learning
+
+- Shaun Cahill
+    - Professor at Smith School of Business
+    - Involved with tech through consulting and his position as Associate Director of Information Technology
+    - Project manager 
+    - Very involved in implementation of tech and the behind the scenes planning involved in implementation of new systems
+
+- Paul Busch
+    - CEO at Bitswift Tech Solutions Inc.
+    - Computer network and systems engineer
+    - Business tech integrations
+    - Seems like a quirky guy
+        - People like this are usually either going to geek out in a good way or try to get super technical and lose you in a question
+    - Device security and automation services 
+    - Bro loves the cloud based stuff
+    - Professor at St. Lawrence College
+
+- Shadi Khalifa
+    - Professor at Queens
+    - Interested in AI and quantam computing projects
+    - DevOps architect with an array of experience with various languages and softwares
+    - PhD in AI and Big Data Analytics with great grades
+    - Projects include:
+        - PapEasy
+            - "Using Wordpress, Flutter, MySQL, and Docker to build an e-health phone-based platform for STD and HPV sampling using the comfortable low cost PapEasy wand. "
+        - WEMA (Affordable Cervical Cancer Screening)
+            - "Using Django, Flutter, PostgreSQL, and Docker to build a phone-based platform for cervical cancer detection and management for low-cost environments with limited healthcare access. Currently being deployed in Rwanda and Tanzania."
+
+- Frank Raco
+    - UofG and Queen's grad
+        - BSC at Guelph in Health Sciences
+        - BASC at Queen's in Electrical and Computer Engineering
+    - Professional engineer running his own company in workplace health and safety
+
+- Wendy Powley
+    - Associate professor at Queen's
+    - Computer science specialist
+    - Big women in tech girl
+    - Started as a research associate in the Database Systems Laboratory (for 24 years)
+
+- Diancheng Li
+    - Research assistant 
+    - PhD student at Queen's 
+
+- Juergen Dingel
+    - Professor at Queen's 
+    - Big researcher
+    - Computer science degree from University of Berlin
+    - Big machine learning guy
