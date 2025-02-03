@@ -1,2 +1,2 @@
-*__pycache__/
+__pycache__/
 flask_testing/cohere_api_key.txt
